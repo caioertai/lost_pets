@@ -2,12 +2,12 @@
 <ul>
   <% @pets.each do |pet| %>
     <li>
-      <p><%= pet.name %></p>
+      <p><%= link_to pet.name, pet %></p>
+      <%#= link_to pet.name, pet_path(pet) %>
+      <%#= link_to pet.name, pet_path(pet.id) %>
       <p><%= pet.species %></p>
       <p><%= pet.address %></p>
-      <p><%= pet.found_on %></p>
       <p><%= pet.found_days_ago %></p>
-      <!-- found 8 days ago -->
     </li>
   <% end %>
 </ul>
