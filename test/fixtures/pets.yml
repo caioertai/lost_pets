@@ -1,13 +1,13 @@
 # Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
 
-one:
-  name: MyString
-  address: MyString
-  found_on: 2018-08-07
-  species: MyString
+pet_found_6_days_ago:
+  name: ScoobyDoo
+  address: Ipanema
+  found_on: 2018-08-01
+  species: dog
 
-two:
-  name: MyString
-  address: MyString
-  found_on: 2018-08-07
-  species: MyString
+pet_without_found_on:
+  name: ScoobyDoo
+  address: Ipanema
+  found_on:
+  species: dog
