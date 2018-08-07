@@ -1,0 +1,21 @@
+<%= form_for pet do |form| %>
+  <p>
+    <%= form.label :name %>
+    <%= form.text_field :name %>
+  </p>
+  <p>
+    <%= form.label :address %>
+    <%= form.text_field :address %>
+  </p>
+  <p>
+    <%= form.label :species %>
+    <%= form.select :species, Pet::SPECIES_ALLOWED %>
+  </p>
+  <p>
+    <%= form.label :found_on %>
+    <%= form.text_field :found_on %>
+  </p>
+  <p>
+    <%= form.submit %>
+  </p>
+<% end %>

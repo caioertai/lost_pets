@@ -5,11 +5,11 @@ Rails.application.routes.draw do
   post 'pets', to: 'pets#create'
 
   # Read
-  get 'pets', to: 'pets#index'
   get 'pets/:id', to: 'pets#show', as: :pet
+  get 'pets', to: 'pets#index'
 
   # Update
-  get 'pets/:id/edit', to: 'pets#edit'
+  get 'pets/:id/edit', to: 'pets#edit', as: :pet_edit
   patch 'pets/:id', to: 'pets#update'
 
   # Delete/Destroy

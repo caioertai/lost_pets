@@ -2,4 +2,8 @@
 <p><%= @pet.species %></p>
 <p><%= @pet.address %></p>
 <p><%= @pet.found_days_ago %></p>
+<%= link_to 'Edit', pet_edit_path(@pet) %>
+<%= link_to 'Delete', @pet, method: :delete %>
+<%#= link_to 'Delete', pet_path(@pet) %>
+<%#= link_to 'Delete', pet_path(@pet.id) %>
 <%= link_to 'Back to list', pets_path %>
