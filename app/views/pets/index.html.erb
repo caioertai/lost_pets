@@ -1,0 +1,13 @@
+<h1>Missing animals, that are also lost</h1>
+<ul>
+  <% @pets.each do |pet| %>
+    <li>
+      <p><%= pet.name %></p>
+      <p><%= pet.species %></p>
+      <p><%= pet.address %></p>
+      <p><%= pet.found_on %></p>
+      <p><%= pet.found_days_ago %></p>
+      <!-- found 8 days ago -->
+    </li>
+  <% end %>
+</ul>
